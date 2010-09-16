@@ -1,8 +1,8 @@
 package Scalar::Random::PP;
-use Scalar::Random::OO;
+use Scalar::Random::PP::OO;
 
 has 'limit' => ( is => 'ro' );
-Scalar::Random::OO::Exporter->setup_import_methods(
+Scalar::Random::PP::OO::Exporter->setup_import_methods(
     as_is     => [ \&randomize ],
 );
 
