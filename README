@@ -2,7 +2,7 @@ NAME
     Scalar::Random::PP - Scalar::Random in Pure Perl
 
 SYNOPSIS
-        use Scalar::Random 'randomize';
+        use Scalar::Random::PP 'randomize';
 
         my $random;
         my $MAX_RANDOM = 100;
@@ -14,7 +14,6 @@ SYNOPSIS
         print $random, "\n"; # '88'
         print $random, "\n"; # '4'
         print $random, "\n"; # '50'
-        use inc::Module::Install;
 
 DESCRIPTION
     This module is intended to be a pure Perl replacement for
@@ -22,20 +21,28 @@ DESCRIPTION
 
     Please see Scalar::Random for full details.
 
-NOTE
-    This module was written as a pair programming excerise between Ingy döt
-    Net and Webster Montego.
+NOTES
+    This module was written as a pair programming excerise between Webster
+    Montego and Ingy döt Net.
 
     The module passes all the same tests as Scalar::Random, even though we
-    felt there could be more elaborate testing. Perhaps we'll add the tests
+    felt there could be more exhaustive testing. Perhaps we'll add the tests
     we'd like to see, so that Alfie John can backport them. :)
 
     We also thought it would be nice if randomize took a lower limit, but we
     decided not to change the API unless Alfie did so first, so that the PP
     module would be an exact replacement.
 
-AUTHOR
-    Webster Montego <websteris@cpan.org> Ingy döt Net <ingy@cpan.org>
+    We used the speedy and zero-dep Mousse module for OO goodness, and
+    packaged it all up with the lovely Module::Install and friends.
+
+RESOURCES
+    GitHub: <http://github.com/websteris/scalar-random-pp-pm>
+
+AUTHORS
+    Webster Montego <websteris@cpan.org>
+
+    Ingy döt Net <ingy@cpan.org>
 
 COPYRIGHT
     Copyright (c) 2010. Webster Montego and Ingy döt Net
